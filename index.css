@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "GulimChe";
+    src: url("./assets/gulimche-Regular.ttf") format("truetype");
+}
+
+:root {
+    font-family: "GulimChe";
+
+    color: var(--content);
+    background-color: var(--background);
+
+    --background: #F0EEEA;
+    --content: #1F1030;
+    --purplish: #5F10B9;
+}
+
+body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    gap: 6rem;
+    text-align: center;
+}
+a {
+    color: var(--purplish);
+    text-decoration: none;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+}
+
+.tell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+    input {
+        width: calc(100% + 5rem);
+        padding: 0.5rem;
+        text-align: center;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid var(--content);
+
+        font-family: "GulimChe";
+        color: var(--content);
+        opacity: 0.75;
+        background-color: transparent;
+    }
+}
+
+.explore-button {
+  all: unset;
+  cursor: pointer;
+}
+
+.told {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+
+    .told-output {
+        font-size: 1.5rem;
+    }
+}
